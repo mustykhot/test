@@ -5,6 +5,7 @@ import redArr from "./assets/redArrow.svg";
 import pro from "./assets/pro.svg";
 import ech from "./assets/ech.svg";
 import arr from "./assets/arr.svg";
+
 import union from "./assets/Union.svg";
 // import convert from "./assets/convert.svg";
 import { useState } from "react";
@@ -15,15 +16,19 @@ import usa from "./assets/usa.svg";
 import arrow from "./assets/arrow.svg";
 import nig from "./assets/nig.svg";
 import cad from "./assets/cad.svg";
+
+import CurrencyDrop from "./components/currencyDrop";
 const Page = () => {
   const [toggle, setToggle] = useState(true);
   const [selected, setSelected] = useState("");
-  //   const onSelectFlag = (country) => {
-  //     console.log(country);
-  //   };
   const handleToggle = () => {
     setToggle(!toggle);
   };
+  const [tender, setTender] = useState("");
+  const [buy, setBuy] = useState("");
+
+  console.log(tender, buy);
+
   return (
     <div className="pd_page">
       <header className="App-header">
@@ -116,18 +121,27 @@ const Page = () => {
                 <p className="number">20</p>
               </div>
               <div className="right">
-                {/* <ReactCountryFlagsCurrencySelect
-                  onSelect={onSelectFlag}
-                  defaultCountry="US"
-                /> */}
+                <CurrencyDrop
+                  handleCurrency={(val) => {
+                    setTender(val);
+                  }}
+                  defaultCurrency={{ flag: nig, code: "NGN" }}
+                />
               </div>
             </div>
             <div className="top">
               <div className="left">
-                <p className="changeText">Tender</p>
+                <p className="changeText">Buy</p>
                 <p className="number">20</p>
               </div>
-              <div className="right"></div>
+              <div className="right">
+                <CurrencyDrop
+                  handleCurrency={(val) => {
+                    setBuy(val);
+                  }}
+                  defaultCurrency={{ flag: nig, code: "NGN" }}
+                />
+              </div>
             </div>
           </div>
           <div className="pro">

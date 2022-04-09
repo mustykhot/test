@@ -1,0 +1,43 @@
+.custom_select {
+  position: relative;
+  .showCurrency,
+  .eachCurrency {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 15.3529px;
+      line-height: 19px;
+
+      color: #173963;
+      margin: 0 9px;
+    }
+  }
+  .currencyList {
+    display: none;
+    background-color: white;
+    border: 1px solid rgb(130, 127, 127);
+    border-radius: 10px;
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    margin-top: 3px;
+    padding: 10px;
+    &.show {
+      display: block;
+    }
+    .eachCurrency {
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgb(130, 127, 127);
+      padding: 5px;
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

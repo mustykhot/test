@@ -260,10 +260,17 @@
           border-radius: 0px 0px 10px 10px;
           padding: 17px 23px;
           display: flex;
+          justify-content: space-between;
           align-items: center;
           &.hard {
             border: 0.7px solid #173963;
             border-radius: 10px 10px 0px 0px;
+          }
+          .right {
+            background: #f5faff;
+            border-radius: 6.55855px;
+            padding: 13px 9.8px;
+            width: 110px;
           }
           .left {
             .changeText {
