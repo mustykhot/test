@@ -152,4 +152,56 @@
       }
     }
   }
+  .listConversion {
+    width: 100%;
+    padding: 14px 80px;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    background-color: #002149;
+    .eachConversion {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+
+      .name {
+        font-weight: 700;
+        font-size: 13.6115px;
+        line-height: 17px;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+      img {
+        margin: 0 5px;
+      }
+      .percent {
+        font-weight: 500;
+        font-size: 13.6115px;
+        line-height: 17px;
+        &.green {
+          color: #34e36f;
+        }
+        &.red {
+          color: #f34018;
+        }
+      }
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background: #f0f2f3;
+    }
+
+    &::-webkit-scrollbar {
+      height: 0px;
+      width: 4px;
+      background: var(--primary);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background: var(--primary);
+    }
+  }
 }
