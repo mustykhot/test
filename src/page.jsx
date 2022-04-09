@@ -8,7 +8,7 @@ import arr from "./assets/arr.svg";
 import union from "./assets/Union.svg";
 // import convert from "./assets/convert.svg";
 import { useState } from "react";
-import ReactCountryFlagsCurrencySelect from "react-country-flag-currency-picker";
+// import ReactCountryFlagsCurrencySelect from "react-country-flag-currency-picker";
 import ReactFlagsSelect from "react-flags-select";
 import "react-languages-select/scss/react-languages-select.scss";
 import usa from "./assets/usa.svg";
@@ -18,9 +18,9 @@ import cad from "./assets/cad.svg";
 const Page = () => {
   const [toggle, setToggle] = useState(true);
   const [selected, setSelected] = useState("");
-  const onSelectFlag = (country) => {
-    console.log(country);
-  };
+  //   const onSelectFlag = (country) => {
+  //     console.log(country);
+  //   };
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -174,7 +174,7 @@ const Page = () => {
             <button>Top Fallers</button>
             <button>Volume Leaders</button>
           </div>
-          <a href="">View More</a>
+          <a href="/">View More</a>
         </div>
         <div className="boxShow">
           <div className="eachBox">
@@ -192,7 +192,7 @@ const Page = () => {
             </div>
             <div className="track">
               <p>Lasted updated January 9</p>
-              <a href="">
+              <a href="/">
                 {" "}
                 Track <img src={arrow} alt="arrow" />{" "}
               </a>
@@ -213,7 +213,7 @@ const Page = () => {
             </div>
             <div className="track">
               <p>Lasted updated January 9</p>
-              <a href="">
+              <a href="/">
                 {" "}
                 Track <img src={arrow} alt="arrow" />{" "}
               </a>
@@ -234,7 +234,7 @@ const Page = () => {
             </div>
             <div className="track">
               <p>Lasted updated January 9</p>
-              <a href="">
+              <a href="/">
                 {" "}
                 Track <img src={arrow} alt="arrow" />{" "}
               </a>
