@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import down from "../../assets/down.svg";
 import nig from "../../assets/nig.svg";
-import { findFlagUrlByNationality } from "country-flags-svg";
-import { countries } from "country-flags-svg";
+import cad from "../../assets/cad.svg";
+// import { findFlagUrlByNationality } from "country-flags-svg";
+// import { countries } from "country-flags-svg";
 import "./style.scss";
-import getAllISOCodes from "iso-country-currency";
+// import getAllISOCodes from "iso-country-currency";
 const CurrencyDrop = ({ defaultCurrency, handleCurrency }) => {
   const [show, setShow] = useState(false);
   const handleShow = () => {
@@ -44,14 +45,14 @@ const CurrencyDrop = ({ defaultCurrency, handleCurrency }) => {
         <div
           onClick={() => {
             setCurrency({
-              flag: nig,
+              flag: cad,
               code: "RFS",
             });
             setRealCurrency("RFS");
           }}
           className="eachCurrency"
         >
-          <img src={nig} alt="nig" />
+          <img src={cad} alt="nig" />
           <p className="name">RFS</p>
         </div>
       </div>

@@ -16,6 +16,7 @@ import usa from "./assets/usa.svg";
 import arrow from "./assets/arrow.svg";
 import nig from "./assets/nig.svg";
 import cad from "./assets/cad.svg";
+import convert from "./assets/convert.svg";
 
 import CurrencyDrop from "./components/currencyDrop";
 const Page = () => {
@@ -115,6 +116,9 @@ const Page = () => {
         <div className="convBox">
           <p className="title">Send Money</p>
           <div className="changeBox">
+            <div className="conv">
+              <img src={convert} alt="convert" />
+            </div>
             <div className="top hard">
               <div className="left">
                 <p className="changeText">Tender</p>
